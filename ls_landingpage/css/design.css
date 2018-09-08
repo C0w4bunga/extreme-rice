@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Xayax';
+  src: url('fonts/xayax-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/xayax-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/xayax-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/xayax-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/xayax-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/xayax-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+body {
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 1200px 900px;
+    background-color: #cccccc;
+}
+
+.outline {
+  color: white;
+  text-shadow: black 5px 5px, black 0 5px, black -5px 5px, black -5px 0, black -5px -5px, black 0 -5px, black 5px -5px, black 5px 0;
+}
+
+.xayax {
+  font-family: Xayax;
+}
+
+.countdown {
+  color: #e2483c;
+  font-size: 60pt;
+} 
