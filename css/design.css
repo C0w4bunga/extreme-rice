@@ -33,6 +33,15 @@ body {
   font-size: 70pt;
 } 
 
+.fatlink {
+  text-decoration: underline;
+  color: #e2483c;
+}
+
+.fatlink:hover {
+  color: rgb(178, 184, 189);
+}
+
 div.overlay {
   background: rgba(255, 255, 255, 0.5);
   margin-top: 70px;
