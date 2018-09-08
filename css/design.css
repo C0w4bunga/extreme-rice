@@ -10,12 +10,12 @@
 
 
 body {
-    background-image: url("../img/bg.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 1200px 900px;
-    background-color: #cccccc;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 1200px 900px;
+  background-color: #cccccc;
 }
 
 .outline {
@@ -33,5 +33,16 @@ body {
 } 
 
 div.overlay {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 70px;
+  overflow: auto;
+}
+
+.custom-container {
+  max-width: 80%;
+}
+
+h1 {
+  margin: 30px 50px 20px 50px;
+  font-size: 5em;
 }

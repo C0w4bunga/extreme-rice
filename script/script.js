@@ -1,6 +1,5 @@
 $('#clock').countdown('2018/10/05 21:00:00')
 .on('update.countdown', function(event) {
-  console.log(event);
   var format = '%H:%M:%S';
   if(event.offset.totalDays > 0) {
     format = '%-d day%!d ' + format;
