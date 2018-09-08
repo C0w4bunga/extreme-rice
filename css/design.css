@@ -31,3 +31,7 @@ body {
   color: #e2483c;
   font-size: 60pt;
 } 
+
+div.overlay {
+  background: rgba(255, 255, 255, 0.7);
+}
