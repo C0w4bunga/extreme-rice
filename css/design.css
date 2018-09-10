@@ -10,13 +10,11 @@
 
 
 body {
-  background-image: url("../img/bg.png");
+  background-image: url("../img/bg_16_9_web.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size: 1200px 900px;
-  /* width: 100%;
-  height: auto; */
+  background-size: cover;
 }
 
 .outline {
