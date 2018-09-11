@@ -87,4 +87,9 @@ and (-webkit-min-device-pixel-ratio: 2)
     position: relative;
     display: grid;
   }
+
+  .redfat {
+    /* color: #e2483c; */
+    font-size: 50pt;
+  } 
 }
