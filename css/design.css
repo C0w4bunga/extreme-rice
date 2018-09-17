@@ -102,6 +102,33 @@ div.overlay-centered {
   /* display: grid; */
 }
 
+.content-container {
+  background-color: var(--ls-white);
+  height: 100%;
+  margin-top: 6%;
+  overflow-y: scroll;
+}
+
+.content-container > h1 {
+  font-family: 'geosanslight';
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 0px;
+}
+
+.content-container > img {
+  max-width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+
+.content-container > p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 h1 {
   margin: 30px 50px 20px 50px;
   font-size: 5em;
