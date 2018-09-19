@@ -107,6 +107,7 @@ div.overlay-centered {
   height: 100%;
   margin-top: 6%;
   overflow-y: scroll;
+  border-radius: 3px;
 }
 
 .content-container > h1 {
@@ -164,8 +165,20 @@ img.logo {
   margin: 0 auto;
 }
 
-.flex-child-wrapper {
+.logo-nav {
+  height: 40px; /* hardcode might be fine here... */
+  width: auto;
+  margin: 0;
+}
 
+.nav-link-custom {
+  margin-left: 3px;
+  font-family: 'geosanslight';
+  color: black !important; 
+}
+
+.nav-bg {
+  background-color: var(--ls-white);
 }
 
 @media only screen 
