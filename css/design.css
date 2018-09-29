@@ -99,7 +99,10 @@ div.overlay-centered {
   max-width: 80%;
   height: 100%;
   position: relative;
-  /* display: grid; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .content-container {
@@ -148,11 +151,20 @@ main {
 .home-nav {
   color: var(--ls-white);
   list-style: none;
-  font-size: 30pt;
+  font-size: 45pt;
   padding: 0;
   font-family: 'geosanslight';
   font-weight: 100;
   margin: 0 auto;
+}
+
+.home-nav > li > a {
+  color: var(--ls-white);
+}
+
+.home-nav > li > a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 img.logo {
@@ -240,6 +252,16 @@ and (max-width: 767px)
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  .home-nav {
+    color: var(--ls-white);
+    list-style: none;
+    font-size: 30pt;
+    padding: 0;
+    font-family: 'geosanslight';
+    font-weight: 100;
+    margin: 0 auto;
   }
 
   img.logo {

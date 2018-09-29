@@ -5,6 +5,7 @@
   * kind of done
 * testumgebung
 * impressum
+* links
 * discography
 * events
 * friends
