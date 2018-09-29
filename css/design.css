@@ -104,9 +104,9 @@ div.overlay-centered {
 
 .content-container {
   background-color: var(--ls-white);
-  height: 100%;
+  height: 80%;
   margin-top: 6%;
-  overflow-y: scroll;
+  overflow-y: auto;
   border-radius: 3px;
 }
 
@@ -213,6 +213,14 @@ and (-webkit-min-device-pixel-ratio: 2)
     font-weight: 100;
     margin-left: 9%;
   }
+
+  .content-container {
+    background-color: var(--ls-white);
+    height: 100%;
+    margin-top: 6%;
+    overflow-y: auto;
+    border-radius: 3px;
+  }
 }
 
 @media only screen 
@@ -239,11 +247,12 @@ and (max-width: 767px)
     margin: 0 auto;
   }
 
-  .home-nav {
-    
+  .content-container {
+    background-color: var(--ls-white);
+    height: 100%;
+    margin-top: 6%;
+    overflow-y: auto;
+    border-radius: 3px;
   }
-
-  .flex-child-wrapper {
   
-  }
 }
