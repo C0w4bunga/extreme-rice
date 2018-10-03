@@ -111,6 +111,7 @@ div.overlay-centered {
   margin-top: 6%;
   overflow-y: auto;
   border-radius: 3px;
+  width: 80%;
 }
 
 .content-container > h1 {
@@ -118,6 +119,7 @@ div.overlay-centered {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 0px;
+  font-size: 45pt;
 }
 
 .content-container > img {
@@ -232,6 +234,7 @@ and (-webkit-min-device-pixel-ratio: 2)
     margin-top: 6%;
     overflow-y: auto;
     border-radius: 3px;
+    width: 100%
   }
 }
 
@@ -275,6 +278,7 @@ and (max-width: 767px)
     margin-top: 6%;
     overflow-y: auto;
     border-radius: 3px;
+    width: 100%
   }
   
 }
