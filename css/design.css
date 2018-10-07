@@ -108,10 +108,10 @@ div.overlay-centered {
 .content-container {
   background-color: var(--ls-white);
   height: 80%;
-  margin-top: 6%;
+  margin-top: 0%;
   overflow-y: auto;
   border-radius: 3px;
-  width: 80%;
+  width: 100%;
 }
 
 .content-container > h1 {
@@ -119,7 +119,7 @@ div.overlay-centered {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 0px;
-  font-size: 45pt;
+  font-size: 35pt;
 }
 
 .content-container > img {
@@ -195,14 +195,15 @@ img.logo {
   background-color: var(--ls-white);
 }
 
+/* MOBILE PORTRAIT */
 @media only screen 
 and (min-width: 320px) 
 and (max-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2)
 {
   .custom-container {
-    max-width: 95%;
-    width: 95%;
+    max-width: 100%;
+    width: 100%;
     height: 100%;
     position: relative;
     display: flex;
@@ -236,8 +237,41 @@ and (-webkit-min-device-pixel-ratio: 2)
     border-radius: 3px;
     width: 100%
   }
+
+  .release-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .release-container > div.cover-wrapper {
+    
+  }
+  
+  .release-container > div.cover-wrapper > h2 {
+    font-family: 'geosanslight';
+    text-align: center;
+  }
+  
+  .release-container > div.cover-wrapper > img.cover {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .release-container > div.tracklist-wrapper > ol {
+    padding-left: 5%;
+    margin-top: 10px;
+  }
 }
 
+/* MOBILE LANDSCAPE */
 @media only screen 
 and (min-width: 481px) 
 and (max-width: 767px) 
@@ -281,4 +315,37 @@ and (max-width: 767px)
     width: 100%
   }
   
+  .release-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-items: flex-start;
+    align-items: flex-start;
+  }
+
+  .release-container > div.cover-wrapper {
+    flex-basis: 70%;
+  }
+  
+  .release-container > div.cover-wrapper > h2 {
+    font-family: 'geosanslight';
+    text-align: left;
+  }
+  
+  .release-container > div.cover-wrapper > img.cover {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .release-container > div.tracklist-wrapper {
+    max-width: 100%;
+    margin-left: 5%;
+  }
+
+  .release-container > div.tracklist-wrapper > ol {
+    padding-left: 5%;
+    margin-top: 42px;
+  }
 }
