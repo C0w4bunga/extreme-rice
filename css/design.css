@@ -276,6 +276,21 @@ and (-webkit-min-device-pixel-ratio: 2)
     padding-left: 5%;
     margin-top: 10px;
   }
+
+  .events-table {
+    margin-left: 3%;
+    max-width: 95%;
+  }
+
+  td.date {
+    width: 26%;
+    font-size: 15pt;
+    font-family: 'geosanslight';
+  }
+
+  td.title {
+    font-size: 14pt;
+  }
 }
 
 /* MOBILE LANDSCAPE */
@@ -362,5 +377,20 @@ and (max-width: 767px)
   .release-container > div.tracklist-wrapper > ol {
     padding-left: 5%;
     margin-top: 42px;
+  }
+
+  .events-table {
+    margin-left: 3%;
+    max-width: 95%;
+  }
+
+  td.date {
+    width: 14%;
+    font-size: 15pt;
+    font-family: 'geosanslight';
+  }
+
+  td.title {
+    font-size: 14pt;
   }
 }
