@@ -255,10 +255,7 @@ and (-webkit-min-device-pixel-ratio: 2)
     margin-right: 5%;
     justify-content: center;
     align-content: center;
-  }
-
-  .release-container > div.cover-wrapper {
-    
+    padding-bottom: 20px;
   }
   
   .release-container > div.cover-wrapper > h2 {
@@ -266,7 +263,7 @@ and (-webkit-min-device-pixel-ratio: 2)
     text-align: center;
   }
   
-  .release-container > div.cover-wrapper > img.cover {
+  .release-container > div.cover-wrapper > a > img.cover {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -338,10 +335,11 @@ and (max-width: 767px)
     margin-right: 5%;
     justify-items: flex-start;
     align-items: flex-start;
+    padding-bottom: 20px;
   }
 
   .release-container > div.cover-wrapper {
-    flex-basis: 70%;
+    flex-basis: 60%;
   }
   
   .release-container > div.cover-wrapper > h2 {
@@ -349,7 +347,7 @@ and (max-width: 767px)
     text-align: left;
   }
   
-  .release-container > div.cover-wrapper > img.cover {
+  .release-container > div.cover-wrapper > a > img.cover {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -358,6 +356,7 @@ and (max-width: 767px)
   .release-container > div.tracklist-wrapper {
     max-width: 100%;
     margin-left: 5%;
+    flex-basis: 30%;
   }
 
   .release-container > div.tracklist-wrapper > ol {
