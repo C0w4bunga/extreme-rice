@@ -1,36 +1,6 @@
 /* FONTS */
 
 @font-face {
-  font-family: 'Xayax';
-  src: url('fonts/xayax-webfont.eot'); /* IE9 Compat Modes */
-  src: url('fonts/xayax-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/xayax-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/xayax-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/xayax-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/xayax-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Roboto-Light';
-  src: url('fonts/roboto-light-webfont.eot'); /* IE9 Compat Modes */
-  src: url('fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/roboto-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/roboto-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/roboto-light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/roboto-light-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Roboto-Regular';
-  src: url('fonts/roboto-regular-webfont.eot'); /* IE9 Compat Modes */
-  src: url('fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/roboto-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/roboto-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/roboto-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/roboto-regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
   font-family: 'geosanslight';
   src: url('fonts/geosanslight-webfont.eot'); /* IE9 Compat Modes */
   src: url('fonts/geosanslight-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -96,7 +66,7 @@ div.overlay-centered {
 }
 
 .custom-container {
-  
+  height: 100%;
 }
 
 .custom-container-frontpage {
@@ -112,7 +82,7 @@ div.overlay-centered {
 .content-container {
   background-color: var(--ls-white);
   height: 80%;
-  margin-top: 0%;
+  margin-top: 5%;
   overflow-y: auto;
   border-radius: 3px;
   width: 100%;
@@ -197,6 +167,64 @@ img.logo {
 
 .nav-bg {
   background-color: var(--ls-white);
+}
+
+.events-table {
+  margin-left: 4%;
+  margin-top: 3%;
+  max-width: 96%;
+}
+
+td.date {
+  width: 14%;
+  font-size: 15pt;
+  font-family: 'geosanslight';
+}
+
+td.title {
+  font-size: 14pt;
+  width: 80%;
+}
+
+.release-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-items: flex-start;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+.release-container > div.cover-wrapper {
+  flex-basis: 60%;
+}
+
+.release-container > div.cover-wrapper > h2 {
+  font-family: 'geosanslight';
+  text-align: left;
+}
+
+.release-container > div.cover-wrapper > a > img.cover {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.release-container > div.tracklist-wrapper {
+  max-width: 100%;
+  margin-left: 5%;
+  flex-basis: 30%;
+}
+
+.release-container > div.tracklist-wrapper > ol {
+  padding-left: 5%;
+  margin-top: 42px;
+  font-size: 15pt;
+}
+
+.release-container > div.tracklist-wrapper > a {
+  font-size: 15pt;
 }
 
 /* MOBILE PORTRAIT */
