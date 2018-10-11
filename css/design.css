@@ -17,6 +17,13 @@
   --ls-red: #e2483c;
 }
 
+/* GLOBAL NO X-SCROLL */
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+} 
+
 body {
   background-image: url("../img/bg_16_9_web.jpg");
   background-repeat: no-repeat;
@@ -92,7 +99,7 @@ div.overlay-centered {
   font-family: 'geosanslight';
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   font-size: 35pt;
 }
 
@@ -144,7 +151,7 @@ main {
 }
 
 img.logo {
-  max-width: 80%;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -225,6 +232,14 @@ td.title {
 
 .release-container > div.tracklist-wrapper > a {
   font-size: 15pt;
+}
+
+.pic-sig {
+  margin-left: 5%;
+  font-size: 10pt;
+  display: block;
+  margin-top: -8px;
+  margin-bottom: 8px;
 }
 
 /* MOBILE PORTRAIT */
@@ -318,6 +333,14 @@ and (-webkit-min-device-pixel-ratio: 2)
 
   td.title {
     font-size: 14pt;
+  }
+
+  .pic-sig {
+    margin-left: 5%;
+    font-size: 10pt;
+    display: block;
+    margin-top: -8px;
+    margin-bottom: 8px;
   }
 }
 
@@ -420,5 +443,13 @@ and (max-width: 767px)
 
   td.title {
     font-size: 14pt;
+  }
+  
+  .pic-sig {
+    margin-left: 5%;
+    font-size: 10pt;
+    display: block;
+    margin-top: -8px;
+    margin-bottom: 8px;
   }
 }
