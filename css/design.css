@@ -63,9 +63,11 @@ html, body {
 }
 
 div.overlay {
-  background: rgba(255, 255, 255, 0.5);
-  margin-top: 70px;
-  overflow: auto;
+  background: rgba(50, 50, 50, 0.5);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow-y: auto;
 }
 
 .cover {
@@ -257,7 +259,7 @@ and (min-width: 320px)
 and (max-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2)
 {
-  main {
+  div.overlay {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
@@ -368,7 +370,7 @@ and (-webkit-min-device-pixel-ratio: 2)
 and (min-width: 481px) 
 and (max-width: 767px) 
 {
-  main {
+  div.overlay {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
