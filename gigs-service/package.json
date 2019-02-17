@@ -1,0 +1,14 @@
+{
+  "name": "gigs-service",
+  "version": "1.0.0",
+  "description": "Simple endpoint exposing a list of Liquid Silk gigs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
