@@ -12,36 +12,43 @@
 <body>
   <main>
     <div class="background">
-        <div class="overlay">
-            <!-- navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light nav-bg">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" class="logo-nav" alt="Liquid Silk Logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-item nav-link nav-link-custom" href="bio.html">BIO</a>
-                    <a class="nav-item nav-link nav-link-custom" href="events.html">EVENTS</a>
-                    <a class="nav-item nav-link nav-link-custom" href="discography.html">DISCOGRAPHY</a>
-                    <a class="nav-item nav-link nav-link-custom" href="contact.html">CONTACT</a>
-                    <a class="nav-item nav-link nav-link-custom" href="impressum.html">IMPRESUM</a>
-                  </div>
-                </div>
-              </nav>
-        
-            <div class="container custom-container">
-              <div class="content-container">
-                <h1>EVENTS</h1>
-                <table class="table events-table">
-                    <tr>
-                        <td class="date">JUL</td>
-                        <td class="title">Stuss am Fluss (Cottbus)</td>
-                    </tr>
-                </table>
+      <div class="overlay">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light nav-bg">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" class="logo-nav" alt="Liquid Silk Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link nav-link-custom" href="bio.html">BIO</a>
+                <a class="nav-item nav-link nav-link-custom" href="events.html">EVENTS</a>
+                <a class="nav-item nav-link nav-link-custom" href="discography.html">DISCOGRAPHY</a>
+                <a class="nav-item nav-link nav-link-custom" href="contact.html">CONTACT</a>
+                <a class="nav-item nav-link nav-link-custom" href="impressum.html">IMPRESUM</a>
               </div>
             </div>
+          </nav>
+    
+        <div class="container custom-container">
+          <div class="content-container">
+            <h1>EVENTS</h1>
+            <div id="gigs-container">
+              <table class="table events-table">
+                  <tr>
+                      <td class="date">JUL</td>
+                      <td class="title">Stuss am Fluss (Cottbus)</td>
+                  </tr>
+              </table>
+            </div>
+
+            <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+            <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" crossorigin></script>
+            <script src="../script/gigs-component.js"></script>
+          </div>
         </div>
+      </div>
     </div>
   </main>
 </body>

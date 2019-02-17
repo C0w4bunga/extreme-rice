@@ -1,10 +1,13 @@
 const express = require('express');
 const fs = require('fs');
+const cors = require('cors');
 
-const app = express()
-const port = 3000
+const app = express();
+const port = 3000;
 
-app.get('/gigs', (req, res) => {
+app.use(cors());
+
+app.get('/gigs', (req, res, next) => {
     try {
         const gigsFileContent = fs.readFileSync('./gigs.csv', { encoding: 'utf-8'} );
         const gigs = 
