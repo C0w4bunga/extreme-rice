@@ -36,26 +36,36 @@ var GigsTable = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      console.log(this.state.gigs);
       return React.createElement(
         'table',
         { className: 'table events-table' },
-        this.state.gigs.map(function (g) {
-          return React.createElement(
-            'tr',
-            null,
-            React.createElement(
-              'td',
-              { 'class': 'date' },
-              g.date
-            ),
-            React.createElement(
-              'td',
-              { 'class': 'title' },
-              g.name
-            )
-          );
-        })
+        React.createElement(
+          'tbody',
+          null,
+          this.state.gigs.map(function (g, index) {
+            return React.createElement(
+              'tr',
+              { key: index },
+              React.createElement(
+                'td',
+                { className: 'date' },
+                g.date
+              ),
+              React.createElement(
+                'td',
+                { className: 'title' },
+                g.name,
+                g.venue ? ' // ' + g.venue : '',
+                g.link ? ' // ' : '',
+                g.link ? React.createElement(
+                  'a',
+                  { href: g.link },
+                  'Event'
+                ) : ''
+              )
+            );
+          })
+        )
       );
     }
   }]);

@@ -19,12 +19,21 @@ class GigsTable extends React.Component {
   }
 
   render() {
-    console.log(this.state.gigs)
     return (
       <table className="table events-table">
-        { this.state.gigs.map(g => (
-          <tr><td class="date">{g.date}</td><td class="title">{g.name}</td></tr>
-        )) }
+        <tbody>
+          { this.state.gigs.map((g, index) => (
+            <tr key={index}>
+              <td className="date">{g.date}</td>
+              <td className="title">
+                {g.name}
+                {g.venue ? ` // ${g.venue}` : ''}
+                {g.link ? ' // ' : ''}
+                {g.link ? <a href={g.link}>Event</a> : ''}
+              </td>
+            </tr>
+          )) }
+        </tbody>
       </table>
     )
   }

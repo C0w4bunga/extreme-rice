@@ -14,7 +14,13 @@ app.get('/gigs', (req, res, next) => {
             gigsFileContent.split('\n')
                 .filter(line => line !== '')
                 .map(line => line.split(',').map(elem => /"(.*)"/.exec(elem)[1]))
-                .map(tuple => ({ date: tuple[0], name: tuple[1]}))        
+                .map(record => record.map(elem => elem ? elem : null))
+                .map(record => ({ 
+                    date: record[0], 
+                    name: record[1],
+                    venue: record[2],
+                    link: record[3]
+                }));
     
         res.status(200).send(gigs);
     } catch (error) {
