@@ -1,0 +1,25 @@
+{
+  "name": "extreme-rice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jsx-watcher": "npx babel --watch react-src --out-dir script --presets react-app/prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C0w4bunga/extreme-rice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/C0w4bunga/extreme-rice/issues"
+  },
+  "homepage": "https://github.com/C0w4bunga/extreme-rice#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  }
+}
