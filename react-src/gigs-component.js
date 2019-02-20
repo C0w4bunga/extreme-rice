@@ -9,7 +9,7 @@ class GigsTable extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://gigs:3000/gigs')
+    axios.get('https://gigs:3000/gigs')
       .then(response => {
         this.setState({ gigs: response.data })
       })

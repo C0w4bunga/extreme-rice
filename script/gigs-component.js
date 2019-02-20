@@ -27,7 +27,7 @@ var GigsTable = function (_React$Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      axios.get('http://gigs:3000/gigs').then(function (response) {
+      axios.get('https://gigs:3000/gigs').then(function (response) {
         _this2.setState({ gigs: response.data });
       }).catch(function (error) {
         console.log('Error loading gigs. ', error);
